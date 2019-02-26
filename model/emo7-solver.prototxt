@@ -1,0 +1,18 @@
+net : "/home/ysten/xiejian/motion/caffe-face/face_example/emo7-train.prototxt"
+# The base learning rate, momentum and the weight decay of the network.
+base_lr: 0.001
+momentum: 0.9
+weight_decay: 1e-05
+# The learning rate policy
+lr_policy: "step"
+stepsize: 20000
+gamma: 0.8
+display: 50
+max_iter: 100000
+snapshot: 10000
+snapshot_prefix: "/home/ysten/xiejian/motion/caffe-face/face_example/weights/emo7-fer2013"
+solver_mode: GPU
+solver_type: SGD
+debug_info: false
+test_iter: 20
+test_interval: 1000
